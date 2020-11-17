@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+}
+
+.title {
+    /* object-fit: cover; */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    /* font-weight: lighter; */
+    color: white;
+    /* line-height: 40px; */
+    text-align: center;
+    letter-spacing: 5.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: 15em;
+    font-family: 'Black Ops One', cursive;
+}
+
+h1 span {
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate
+{
+    0%{
+        opacity: 0;
+        transform: rotateY(-50deg);
+        filter: blur(5.5px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+/* title {
+    animation: blink 5.5s linear 20;
+    /* color: green; */
+/* }
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    } */ */
+
+h1 span:nth-child(1)
+{
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(2)
+{
+    animation-delay: 2s;
+}
+
+h1 span:nth-child(3)
+{
+    animation-delay: 3s;
+}
+
+h1 span:nth-child(4)
+{
+    animation-delay: 4s;
+}
+
+h1 span:nth-child(5)
+{
+    animation-delay: 5s;
+}
